@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ninja Van Myanmar</title>
+    <link rel="icon" href="TabIcon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .download-button {
+            background-color: rgba(179, 19, 19, 0.8); /* Set the background color */
+            color: white; /* Set the text color */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            max-width: 100%; /* Ensure images fit within screen size */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align images to the left */
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            flex-basis: 25%; /* Each image takes up 25% of the container width */
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            margin-top: 20px; /* Adjust spacing between footer and images */
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer div {
+            flex-basis: 25%; /* Each footer div takes up 25% of the container width (same as the images) */
+            margin-bottom: 5px;
+        }
+
+        .footer-icon {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 500px) {
+            .footer div {
+                flex-basis: 100%; /* Adjust width for smaller screens */
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Ninja Van Myanmar User Guide Book</h1>
+
+    <!-- Button to download the PDF file -->
+
+    <div class="button-container">
+        <button class="download-button" onclick="downloadPDF()">
+            <i class="fas fa-download"></i> Download PDF
+        </button>
+    </div>
+
+    <!-- 36 images shown in order -->
+    <div class="image-container">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <img src="image4.jpg" alt="Image 4">
+        <img src="image5.jpg" alt="Image 5">
+        <img src="image6.jpg" alt="Image 6">
+        <img src="image7.jpg" alt="Image 7">
+        <img src="image8.jpg" alt="Image 8">
+        <img src="image9.jpg" alt="Image 9">
+        <img src="image10.jpg" alt="Image 10">
+        <img src="image11.jpg" alt="Image 11">
+        <img src="image12.jpg" alt="Image 12">
+        <img src="image13.jpg" alt="Image 13">
+        <img src="image14.jpg" alt="Image 14">
+        <img src="image15.jpg" alt="Image 15">
+        <img src="image16.jpg" alt="Image 16">
+        <img src="image17.jpg" alt="Image 17">
+        <img src="image18.jpg" alt="Image 18">
+        <img src="image19.jpg" alt="Image 19">
+        <img src="image20.jpg" alt="Image 20">
+        <img src="image21.jpg" alt="Image 21">
+        <img src="image22.jpg" alt="Image 22">
+        <img src="image23.jpg" alt="Image 23">
+        <img src="image24.jpg" alt="Image 24">
+        <img src="image25.jpg" alt="Image 25">
+        <img src="image26.jpg" alt="Image 26">
+        <img src="image27.jpg" alt="Image 27">
+        <img src="image28.jpg" alt="Image 28">
+        <img src="image29.jpg" alt="Image 29">
+        <img src="image30.jpg" alt="Image 30">
+        <img src="image31.jpg" alt="Image 31">
+        <img src="image31.jpg" alt="Image 31">
+        <img src="image33.jpg" alt="Image 33">
+        <img src="image34.jpg" alt="Image 34">
+        <img src="image35.jpg" alt="Image 35">
+        <img src="image36.jpg" alt="Image 36">
+        <img src="image37.jpg" alt="Image 37">
+    </div>
+
+     <!-- Footer section -->
+    <div class="footer">
+        <div class="footer-icon" onclick="window.location.href='https://dashboard.ninjavan.co/v2/login'">
+            <i class="fas fa-copyright"></i> Ninja Van. 2023
+        </div>
+        <div class="footer-email" onclick="location.href='mailto:support_mm@ninjavan.co'">
+            Email: support_mm@ninjavan.co
+        </div>
+        <div class="footer-tel" onclick="location.href='tel:+959777111001'">
+            Tel: (+95)9 777 111 001
+        </div>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            // Replace 'your_pdf_file.pdf' with the actual file path of your PDF
+            const pdfUrl = 'UserGuideBook.pdf';
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = 'UserGuideBook.pdf'; // Change 'your_pdf_filename' to the desired filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
