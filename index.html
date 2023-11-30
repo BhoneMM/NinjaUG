@@ -141,6 +141,7 @@
 
     <script>
         function downloadPDF() {
+            try{
             // Replace 'your_pdf_file.pdf' with the actual file path of your PDF
             const pdfUrl = 'UserGuideBook.pdf';
             const link = document.createElement('a');
@@ -148,7 +149,8 @@
             link.download = 'UserGuideBook.pdf'; // Change 'your_pdf_filename' to the desired filename
             document.body.appendChild(link);
             link.click();
-            document.body.removeChild(link);
+            document.body.removeChild(link); }
+            catch(error){console.log(error)}
         }
     </script>
 </body>
